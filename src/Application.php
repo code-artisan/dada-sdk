@@ -1,9 +1,9 @@
 <?php
 
-namespace Dada;
+namespace DadaSDK;
 
 use Closure;
-use Dada\Kernel\ServiceContainer;
+use DadaSDK\Kernel\ServiceContainer;
 
 class Application extends ServiceContainer
 {

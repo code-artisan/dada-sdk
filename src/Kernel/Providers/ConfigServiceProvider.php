@@ -1,6 +1,6 @@
 <?php
 
-namespace Dada\Kernel\Providers;
+namespace DadaSDK\Kernel\Providers;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

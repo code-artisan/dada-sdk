@@ -1,8 +1,8 @@
 <?php
 
-namespace Dada\Message;
+namespace DadaSDK\Message;
 
-use Dada\Kernel\BaseClient;
+use DadaSDK\Kernel\BaseClient;
 
 class Client extends BaseClient
 {

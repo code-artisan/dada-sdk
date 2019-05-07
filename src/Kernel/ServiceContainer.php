@@ -1,9 +1,9 @@
 <?php
 
-namespace Dada\Kernel;
+namespace DadaSDK\Kernel;
 
-use Dada\Kernel\Providers\ConfigServiceProvider;
-use Dada\Kernel\Providers\HttpClientServiceProvider;
+use DadaSDK\Kernel\Providers\ConfigServiceProvider;
+use DadaSDK\Kernel\Providers\HttpClientServiceProvider;
 use Pimple\Container;
 
 class ServiceContainer extends Container

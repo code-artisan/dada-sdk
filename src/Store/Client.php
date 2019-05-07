@@ -1,8 +1,8 @@
 <?php
 
-namespace Dada\Store;
+namespace DadaSDK\Store;
 
-use Dada\Kernel\BaseClient;
+use DadaSDK\Kernel\BaseClient;
 
 class Client extends BaseClient
 {

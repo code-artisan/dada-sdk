@@ -1,8 +1,8 @@
 <?php
 
-namespace Dada\Kernel;
+namespace DadaSDK\Kernel;
 
-// use Dada\Kernel\Traits\HasHttpRequests;
+// use DadaSDK\Kernel\Traits\HasHttpRequests;
 use GuzzleHttp\Client;
 
 class BaseClient
@@ -10,7 +10,7 @@ class BaseClient
     // use HasHttpRequests { request as performRequest; }
 
     /**
-     * @var \Dada\Kernel\ServiceContainer
+     * @var \DadaSDK\Kernel\ServiceContainer
      */
     protected $app;
 
@@ -29,7 +29,7 @@ class BaseClient
     /**
      * BaseClient constructor.
      *
-     * @param \Dada\Kernel\ServiceContainer $app
+     * @param \DadaSDK\Kernel\ServiceContainer $app
      */
     public function __construct(ServiceContainer $app)
     {
@@ -80,7 +80,7 @@ class BaseClient
      * @param string $url
      * @param array  $query
      *
-     * @throws \Dada\Kernel\Exceptions\InvalidConfigException
+     * @throws \DadaSDK\Kernel\Exceptions\InvalidConfigException
      *
      * @return \Psr\Http\Message\ResponseInterface
      */
@@ -95,7 +95,7 @@ class BaseClient
      * @param string $url
      * @param array  $data
      *
-     * @throws \Dada\Kernel\Exceptions\InvalidConfigException
+     * @throws \DadaSDK\Kernel\Exceptions\InvalidConfigException
      *
      * @return \Psr\Http\Message\ResponseInterface
      */
@@ -110,7 +110,7 @@ class BaseClient
      * @param string $url
      * @param array  $data
      *
-     * @throws \Dada\Kernel\Exceptions\InvalidConfigException
+     * @throws \DadaSDK\Kernel\Exceptions\InvalidConfigException
      *
      * @return \Psr\Http\Message\ResponseInterface
      */
@@ -125,7 +125,7 @@ class BaseClient
      * @param string $url
      * @param array  $data
      *
-     * @throws \Dada\Kernel\Exceptions\InvalidConfigException
+     * @throws \DadaSDK\Kernel\Exceptions\InvalidConfigException
      *
      * @return \Psr\Http\Message\ResponseInterface
      */
@@ -141,7 +141,7 @@ class BaseClient
      * @param string|array $data
      * @param array        $query
      *
-     * @throws \Dada\Kernel\Exceptions\InvalidConfigException
+     * @throws \DadaSDK\Kernel\Exceptions\InvalidConfigException
      *
      * @return \Psr\Http\Message\ResponseInterface
      */

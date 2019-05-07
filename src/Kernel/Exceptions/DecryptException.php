@@ -1,6 +1,6 @@
 <?php
 
-namespace Dada\Kernel\Exceptions;
+namespace DadaSDK\Kernel\Exceptions;
 
 class DecryptException extends Exception
 {

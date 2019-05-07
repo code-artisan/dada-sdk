@@ -1,6 +1,6 @@
 <?php
 
-namespace Dada\Message;
+namespace DadaSDK\Message;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

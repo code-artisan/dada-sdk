@@ -1,6 +1,6 @@
 <?php
 
-namespace Dada\Kernel\Exceptions;
+namespace DadaSDK\Kernel\Exceptions;
 
 use Exception as BaseException;
 

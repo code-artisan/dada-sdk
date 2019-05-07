@@ -1,6 +1,6 @@
 <?php
 
-namespace Dada\Gratuity;
+namespace DadaSDK\Gratuity;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

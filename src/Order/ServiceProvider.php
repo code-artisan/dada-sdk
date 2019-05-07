@@ -1,6 +1,6 @@
 <?php
 
-namespace Dada\Order;
+namespace DadaSDK\Order;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

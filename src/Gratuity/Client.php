@@ -1,8 +1,8 @@
 <?php
 
-namespace Dada\Gratuity;
+namespace DadaSDK\Gratuity;
 
-use Dada\Kernel\BaseClient;
+use DadaSDK\Kernel\BaseClient;
 
 class Client extends BaseClient
 {

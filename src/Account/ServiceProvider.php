@@ -1,6 +1,6 @@
 <?php
 
-namespace Dada\Account;
+namespace DadaSDK\Account;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

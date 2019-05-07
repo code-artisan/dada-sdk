@@ -1,13 +1,13 @@
 <?php
 
-namespace Dada;
+namespace DadaSDK;
 
 class Factory
 {
     /**
      * @param array $config
      *
-     * @return \Dada\Kernel\ServiceContainer
+     * @return \DadaSDK\Kernel\ServiceContainer
      */
     public static function make($config = [])
     {

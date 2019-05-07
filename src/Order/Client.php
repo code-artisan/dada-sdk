@@ -1,8 +1,8 @@
 <?php
 
-namespace Dada\Order;
+namespace DadaSDK\Order;
 
-use Dada\Kernel\BaseClient;
+use DadaSDK\Kernel\BaseClient;
 
 class Client extends BaseClient
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dada\Reason;
+namespace DadaSDK\Reason;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

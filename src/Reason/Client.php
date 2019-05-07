@@ -1,8 +1,8 @@
 <?php
 
-namespace Dada\Reason;
+namespace DadaSDK\Reason;
 
-use Dada\Kernel\BaseClient;
+use DadaSDK\Kernel\BaseClient;
 
 class Client extends BaseClient
 {
