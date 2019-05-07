@@ -1,28 +1,28 @@
 <h1 align="center"> dada-sdk </h1>
 
-<p align="center"> .</p>
-
-
-## Installing
+## 安装
 
 ```shell
 $ composer require artisan/dada-sdk -vvv
 ```
 
-## Usage
+## 示例
 
-TODO
+```php
+<?php
 
-## Contributing
+use Dada\Factory;
 
-You can contribute in one of three ways:
+$app = Factory::make([
+    'app_key'    => 'your app key.',
+    'app_secret' => 'your app secret.',
+    'source_id'  => 'source id',
+    'env' => 'development / production',
+]);
 
-1. File bug reports using the [issue tracker](https://github.com/artisan/dada-sdk/issues).
-2. Answer questions or fix bugs on the [issue tracker](https://github.com/artisan/dada-sdk/issues).
-3. Contribute new features or update the wiki.
+$app->order->create($params);
 
-_The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._
+$app->order->cancel($order_id, $cancel_reason_id, $cancel_reason);
 
-## License
-
-MIT
+$app->gratuity->add($params);
+```
