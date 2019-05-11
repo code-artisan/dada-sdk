@@ -2,10 +2,13 @@
 
 namespace DadaSDK\Kernel;
 
+// use DadaSDK\Kernel\Traits\HasHttpRequests;
 use GuzzleHttp\Client;
 
 class BaseClient
 {
+    // use HasHttpRequests { request as performRequest; }
+
     /**
      * @var \DadaSDK\Kernel\ServiceContainer
      */
@@ -33,7 +36,7 @@ class BaseClient
         $this->app = $app;
     }
 
-    public function getAppSecret()
+    protected function getAppSecret()
     {
         return $this->app->config['app_secret'];
     }
@@ -41,7 +44,7 @@ class BaseClient
     /**
      * Signature.
      */
-    public function signature(array $data, string $appSecret)
+    protected function signature(array $data, string $appSecret)
     {
         ksort($data);
 

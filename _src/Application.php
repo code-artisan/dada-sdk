@@ -19,8 +19,18 @@ class Application extends ServiceContainer
         Gratuity\ServiceProvider::class,
     ];
 
-    public function handleOrderNotify(Closure $closure)
+    public function handleOrderNotify(Closure $callback)
     {
-        return (new Notify\Order($this))->handle($closure);
+        return \call_user_func($callback);
+    }
+
+    public function handleMessageNotify(Closure $callback)
+    {
+        return \call_user_func($callback);
+    }
+
+    public function getOpenedCityCode()
+    {
+        
     }
 }

@@ -3,7 +3,6 @@
 namespace DadaSDK\Kernel;
 
 use DadaSDK\Kernel\Providers\ConfigServiceProvider;
-use DadaSDK\Kernel\Providers\RequestServiceProvider;
 use DadaSDK\Kernel\Providers\HttpClientServiceProvider;
 use Pimple\Container;
 
@@ -12,7 +11,9 @@ class ServiceContainer extends Container
     /**
      * @var array
      */
-    protected $config = [];
+    protected $config = [
+        'env' => 'development'
+    ];
 
     /**
      * @var array
@@ -31,7 +32,7 @@ class ServiceContainer extends Container
 
         parent::__construct([]);
 
-        $this->config = $config;
+        $this->config = array_merge($this->config, $config);
     }
 
     /**
@@ -53,7 +54,6 @@ class ServiceContainer extends Container
     {
         return array_merge([
             ConfigServiceProvider::class,
-            RequestServiceProvider::class,
             HttpClientServiceProvider::class,
         ], $this->providers);
     }
